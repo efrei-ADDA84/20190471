@@ -12,7 +12,8 @@ jobs:
       - name: Build Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./TP2
+          file: ./TP2/Dockerfile
           push: true
           tags: mariam2304/container1:latest
       - name: Push image to Docker Hub
@@ -23,7 +24,8 @@ jobs:
       - name: Publish Docker image to Docker Hub
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./TP2
+          file: ./TP2/Dockerfile
           push: true
           tags: mariam2304/container1:latest:latest
  
