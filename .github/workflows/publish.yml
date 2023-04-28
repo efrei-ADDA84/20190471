@@ -28,7 +28,4 @@ jobs:
           context: ./tp2
           file: ./tp2/Dockerfile
           push: true
-          tags: mariam2304/container1:latest:latest
- 
-
- 
+          tags: mariam2304/container1:latest
