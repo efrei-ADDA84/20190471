@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
       - run: |
-          docker build TP3 -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/20190471:v1
+          docker build tp3 -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/20190471:v1
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/20190471:v1
 
       - name: 'Deploy to Azure Container Instances'
